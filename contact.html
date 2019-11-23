@@ -2,52 +2,95 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Contact</title>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1 id="header-title">
-                Jacob Dolph
-            </h1>
-            <nav>
-                <ul id="navigation">
-                    <li><span><a href="index.html">About</a></span></li>
-                    <li>|</li>
-                    <li><span><a href="portfolio.html">Portfolio</a></span></li>
-                    <li>|</li>
-                    <li><span><a href="contact.html">Contact</a></span></li>
+    <!-- navigation bar -->
+    <container>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info text-white">
+            <a class="navbar-brand" href="#">Jacob Dolph</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    </div>
-    </header>
-    <div class="container">
-        <div class="main-body">
-            <h1 class="content-header">Contact</h1>
-            <hr>
-            <br>
-            <form>
-                <p>
-                    <label>Name</label><br>
-                    <input type="text" id="name"><br>
-                    <label>Email</label><br>
-                    <input type="text" id="email"><br>
-                    <label>Message</label><br>
-                    <textarea type="text" id="message"></textarea><br>
-                    <button id="button" type="button" value="submit">Submit</button>
-                </p>
-            </form>
+            </div>
+        </nav>
+        <br>
+
+        <!-- I am going to try to have a container on the left, middle and one on the right -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 bg-light border border-light rounded-lg">
+                <h1>Contact</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="First Name Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Message</label>
+                                <textarea id="message-box" class="form-control" id="exampleFormControlTextarea1"
+                                    rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2"></div>
         </div>
-    </div>
-    <footer>
-        <p id="footer-font">Copyright &#169</p>
-    </footer>
+
+
+
+        <div id="page-footer">
+            <p>copyright &copy;</p>
+
+
+
+        </div>
+
+
+
+    </container>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
